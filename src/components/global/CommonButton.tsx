@@ -1,7 +1,8 @@
 import { Button, ButtonProps } from "@chakra-ui/react";
+import { ReactNode } from "react";
 
 interface IButtonProps extends ButtonProps {
-  children: string;
+  children: string | ReactNode;
 }
 
 const CommonButton = ({ children, ...others }: IButtonProps) => {
